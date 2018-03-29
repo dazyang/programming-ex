@@ -9,8 +9,8 @@ module.exports = function(grunt) {
     },
       copy: {
         release: {
-          src: 'mainfest.js',
-          dest: 'release/manifest.js'
+          src: 'mainfest.json',
+          dest: 'release/manifest.json'
         }
       },
       jshint: {
