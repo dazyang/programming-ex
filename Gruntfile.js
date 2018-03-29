@@ -15,13 +15,17 @@ module.exports = function(grunt) {
       },
       jshint: {
         files: ['js/values.js', 'js/prompt.js']
+      },
+      watch: {
+        files: ['<%= jshint.files %>', 'manifest.json'],
+        tasks: ['default']
       }
   });
   //Grunt plug-ins
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-
+  grunt.loadNpmTasks('grunt-contrib-watch');
   //register tasks
   grunt.registerTask('default', ['jshint', 'concat', 'copy'])
 }
