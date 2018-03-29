@@ -1,10 +1,11 @@
-var projectName = 'programmingEx';
-var versionNumber = '0.0.1';
 var currentDate = new Date();
 
-var currentTime = currentDate.getFullYear() + '-' +
+var objValues = {
+  projectName: 'programmingEx',
+  versionNumber: '0.0.1',
+  currentTime: currentDate.getFullYear() + '-' +
                     (currentDate.getMonth() + 1) + '-' +
                     currentDate.getDate() + 'at' +
                     currentDate.getHours() + ':' +
-                    currentDate.getSeconds();
-                    
+                    currentDate.getSeconds()
+};    
