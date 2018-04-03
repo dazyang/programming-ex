@@ -1,11 +1,17 @@
-var currentDate = new Date();
-
+// from values.js
 var objValues = {
   projectName: 'programmingEx',
   versionNumber: '0.0.1',
-  currentTime: currentDate.getFullYear() + '-' +
-                (currentDate.getMonth() + 1) + '-' +
-                currentDate.getDate() + 'at' +
-                currentDate.getHours() + ':' +
-                currentDate.getSeconds()
-};    
+  areaCodes: {
+    '408': 'Silicon Valley',
+    '702': 'Las Vegas',
+    '801': 'Northern Utah',
+    '765': 'West Lafayette',
+    '901': 'Memphis',
+    '507': 'Rochester, MN'
+  }
+};   
+
+function getAreaCodes() {
+  return objValues.areaCodes;
+}
